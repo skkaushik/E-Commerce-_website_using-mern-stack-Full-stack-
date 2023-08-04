@@ -1,12 +1,28 @@
-import React from 'react'
-import Layout from '../components/Layout/Layout'
+import React from "react";
+import Layout from "./../components/Layout/Layout";
 
-function Policy() {
+const Policy = () => {
   return (
-    <Layout>
-        <h1>Policy</h1>
+    <Layout title={"Privacy Policy"}>
+      <div className="row contactus ">
+        <div className="col-md-6 ">
+          <img
+            src="/images/contactus.jpeg"
+            alt="contactus"
+            style={{ width: "100%" }}
+          />
+        </div>
+        <div className="col-md-4">
+          <p>1. Terms of Service</p>
+          <p>2. Privacy policy</p>
+          <p>3. Returns and exchanges policy</p>
+          <p>4. Shipping policy</p>
+          <p>5. Taxes</p>
+         
+        </div>
+      </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default Policy
+export default Policy;
