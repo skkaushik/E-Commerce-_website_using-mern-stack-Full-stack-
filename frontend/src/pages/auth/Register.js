@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Layout from '../../components/Layout/Layout';
 import  toast from 'react-hot-toast';
 import axios from 'axios';
-// import { useNavigate } from 'react'
+import { useNavigate } from "react-router-dom";
 
 function Register() {
   const [name,setName]=useState('');
@@ -11,7 +11,7 @@ function Register() {
   const [phone,setPhone]=useState('');
   const [address,setAddress]=useState('');
   const [answer,setAnswer]=useState('');
-  // const navigate=useNavigate();
+  const navigate=useNavigate();
   
   const handleSubmit=async(e)=>{
     e.preventDefault();
@@ -23,7 +23,7 @@ try{
   if(res.data.success){
     toast.success(res.data.message);
     console.log(res.data.message)
-    // navigate('/login');
+    navigate('/login');
   }else{
     toast.error(res.data.message);
   }
