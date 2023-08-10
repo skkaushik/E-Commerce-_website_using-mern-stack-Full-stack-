@@ -1,22 +1,21 @@
 import React from "react";
-import { NavLink, Link} from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { useAuth } from "../../context/auth";
 import { toast } from "react-hot-toast";
 
-
 function Header() {
   const [auth, setAuth] = useAuth();
- 
 
-  const handleLogout=()=>{
-setAuth({
-  ...auth,user:null,token:''
-})
-localStorage.removeItem('auth');
+  const handleLogout = () => {
+    setAuth({
+      ...auth,
+      user: null,
+      token: "",
+    });
+    localStorage.removeItem("auth");
 
-toast.success("Logout Successfully")
-  }
-
+    toast.success("Logout Successfully");
+  };
 
   return (
     <>
@@ -63,14 +62,40 @@ toast.success("Logout Successfully")
                 </>
               ) : (
                 <>
-                  <li className="nav-item">
-                    <NavLink onClick={handleLogout} to='/login' className="nav-link">
-                      Logout
+                  <li className="nav-item dropdown">
+                    <NavLink
+                      className="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      style={{ border: "none" }}
+                    >
+                      {auth?.user?.name}
                     </NavLink>
+                    <ul className="dropdown-menu">
+                      <li>
+                        <NavLink
+                          to={`/dashboard/${
+                            auth?.user?.role === 1 ? "admin" : "user"
+                          }`}
+                          className="dropdown-item"
+                        >
+                          Dashboard
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          onClick={handleLogout}
+                          to="/login"
+                          className="dropdown-item"
+                        >
+                          Logout
+                        </NavLink>
+                      </li>
+                    </ul>
                   </li>
                 </>
               )}
-
               <li className="nav-item">
                 <NavLink to="/cart" className="nav-link">
                   Cart(0)

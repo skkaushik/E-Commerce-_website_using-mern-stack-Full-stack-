@@ -72,7 +72,7 @@ try{
             type="button"
             className="btn forgot-btn"
             onClick={() => {
-            //   navigate("/forgot-password");
+              navigate("/forgot-password");
             }}
           >
             Forgot Password
