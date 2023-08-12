@@ -9,13 +9,15 @@ import 'antd/dist/reset.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
-  {/* <React.StrictMode> */}
+  
+
   <AuthProvider>
+    <BrowserRouter>
     <App />
+    </BrowserRouter>
     </AuthProvider>
-  {/* </React.StrictMode> */}
-  </BrowserRouter>
+ 
+ 
 );
 
 // If you want to start measuring performance in your app, pass a function
