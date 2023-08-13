@@ -19,7 +19,7 @@ console.log(name,email,password,address,answer,phone);
 try{
 
   const user={name,email,password,address,answer,phone};
-  const res=await axios.post('http://localhost:8080/api/register',user);
+  const res=await axios.post('https://ecommerceapp-hg1t.onrender.com/api/register',user);
   if(res.data.success){
     toast.success(res.data.message);
     console.log(res.data.message)

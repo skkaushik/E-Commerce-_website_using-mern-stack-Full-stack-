@@ -18,7 +18,7 @@ console.log(email,password);
 try{
 
   const user={email,password};
-  const res=await axios.post('http://localhost:8080/api/login',user);
+  const res=await axios.post('https://ecommerceapp-hg1t.onrender.com/api/login',user);
   if(res.data.success){
     toast.success(res.data.message);
     setAuth({

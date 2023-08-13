@@ -10,7 +10,7 @@ export default function AdminRoute() {
 
   useEffect(() => {
     const authCheck = async () => {
-      const res = await axios.get("http://localhost:8080/api/admin-auth");
+      const res = await axios.get("https://ecommerceapp-hg1t.onrender.com/api/admin-auth");
       if (res.data.ok) {
         setOk(true);
       } else {
