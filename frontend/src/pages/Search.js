@@ -31,7 +31,7 @@ const Search = () => {
                   </p>
                   <p className="card-text"> $ {p.price}</p>
                   <button class="btn btn-primary ms-1"  onClick={() => navigate(`/product/${p.slug}`)} >More Details</button>
-                  <button class="btn btn-secondary ms-1">ADD TO CART</button>
+                  {/* <button class="btn btn-secondary ms-1">ADD TO CART</button> */}
                 </div>
               </div>
             ))}
