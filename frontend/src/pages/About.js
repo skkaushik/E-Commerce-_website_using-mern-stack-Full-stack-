@@ -14,12 +14,18 @@ const About = () => {
         </div>
         <div className="col-md-4">
           <p className="text-justify mt-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            officiis obcaecati esse tempore unde ratione, eveniet mollitia,
-            perferendis eius temporibus dicta blanditiis doloremque explicabo
-            quasi sunt vero optio cum aperiam vel consectetur! Laborum enim
-            accusantium atque, excepturi sapiente amet! Tenetur ducimus aut
-            commodi illum quidem neque tempora nam.
+            Welcome to MernMarket, your premier destination for a seamless
+            online shopping experience. Rooted in the cutting-edge MERN
+            (MongoDB, Express.js, React, Node.js) stack, we are dedicated to
+            delivering a dynamic and user-friendly e-commerce platform that
+            brings together an expansive array of products, intuitive
+            navigation, and secure transactions. At MernMarket, we're driven by
+            a passion for innovation and customer satisfaction, consistently
+            striving to provide you with a curated selection of high-quality
+            goods, from fashion and electronics to home essentials and beyond.
+            Join us in redefining online shopping as we connect technology with
+            your desires, making every click an exploration of unparalleled
+            choices and convenience.
           </p>
         </div>
       </div>
