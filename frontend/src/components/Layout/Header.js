@@ -24,7 +24,7 @@ function Header() {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <nav className="navbar navbar-expand-lg  fixed-top nav-col">
         <div className="container-fluid">
           <button
             className="navbar-toggler"
@@ -41,16 +41,16 @@ function Header() {
             <Link to="/" className="navbar-brand">
               🛒 MernMarket
             </Link>
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0  ">
               <SearchInput/>
-              <li className="nav-item">
-                <NavLink to="/" className="nav-link ">
+              <li className="nav-item " >
+                <NavLink to="/" className="nav-link text-white ">
                   Home
                 </NavLink>
               </li>
               <li className="nav-item dropdown">
                 <Link
-                  className="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle text-white"
                   to={"/categories"}
                   data-bs-toggle="dropdown"
                 >
@@ -65,7 +65,7 @@ function Header() {
                   {categories?.map((c) => (
                     <li>
                       <Link
-                        className="dropdown-item"
+                        className="dropdown-item "
                         to={`/category/${c.slug}`}
                       >
                         {c.name}
@@ -77,12 +77,12 @@ function Header() {
               {!auth.user ? (
                 <>
                   <li className="nav-item">
-                    <NavLink to="/register" className="nav-link">
+                    <NavLink to="/register" className="nav-link text-white">
                       Register
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink to="/login" className="nav-link">
+                    <NavLink to="/login" className="nav-link text-white">
                       Login
                     </NavLink>
                   </li>
@@ -91,7 +91,7 @@ function Header() {
                 <>
                   <li className="nav-item dropdown">
                     <NavLink
-                      className="nav-link dropdown-toggle"
+                      className="nav-link dropdown-toggle text-white "
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
@@ -124,7 +124,7 @@ function Header() {
                 </>
               )}
               <li className="nav-item">
-                <NavLink to="/cart" className="nav-link">
+                <NavLink to="/cart" className="nav-link text-white">
                   Cart({cart?.length})
                 </NavLink>
               </li>

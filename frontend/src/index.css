@@ -8,6 +8,7 @@
 
 /* //navbar css */
 .navbar {
+  
   font-family: "Poppins", sans-serif;
   font-size: 17px;
   line-height: 26px;
@@ -19,6 +20,7 @@
 
 .nav-link {
   font-weight: 300 !important;
+  
 }
 
 .active {
@@ -37,13 +39,10 @@
 .footer {
   color: white;
   padding: 25px;
-  background: #000000; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #434343,
-    #000000
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #434343, #000000);
+  background: #283048;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 }
 
 .footer a {
@@ -300,3 +299,27 @@
   color: white;
   padding: 20px 0px;
 }
+
+.layout{
+  margin-top: 50px !important;
+  /* background-image: linear-gradient(to right, #141e30, #243b55); */
+
+}
+.img1{
+  height: 250px;
+}
+
+.banner-img{
+  height: 130px;
+}
+
+.details-img{
+  width: 250px;
+}
+.nav-col{
+  background: #616161;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #9bc5c3, #616161);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #9bc5c3, #616161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+

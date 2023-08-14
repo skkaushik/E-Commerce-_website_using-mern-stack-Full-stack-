@@ -43,13 +43,13 @@ const ProductDetails = () => {
         <div className="col-md-6">
           <img
             src={`https://ecommerceapp-hg1t.onrender.com/api/product/product-photo/${product._id}`}
-            className="card-img-top"
+            className="card-img-top details-img"
             alt={product.name}
             height="300"
-            width={"350px"}
+            width="200px"
           />
         </div>
-        <div className="col-md-6 product-details-info">
+        <div className="col-md-6 product-details-info ">
           <h1 className="text-center">Product Details</h1>
           <hr />
           <h6>Name : {product.name}</h6>
@@ -79,7 +79,7 @@ const ProductDetails = () => {
                 className="card-img-top"
                 alt={p.name}
               />
-              <div className="card-body">
+              <div className="card-body bg-info-subtle">
                 <div className="card-name-price">
                   <h5 className="card-title">{p.name}</h5>
                   <h5 className="card-title card-price">

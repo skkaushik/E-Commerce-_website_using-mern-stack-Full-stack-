@@ -36,7 +36,7 @@ const CategoryProduct = () => {
                 <div className="card m-2" key={p._id}>
                   <img
                     src={`https://ecommerceapp-hg1t.onrender.com/api/product/product-photo/${p._id}`}
-                    className="card-img-top"
+                    className="card-img-top img1"
                     alt={p.name}
                   />
                   <div className="card-body">
